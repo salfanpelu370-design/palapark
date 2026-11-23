@@ -1,0 +1,100 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #ffe4ef 0%, #fff0f6 50%, #ffffff 100%);
+    background-attachment: fixed;
+    color: #5a2a3c;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #e0457b;
+}
+
+.header, .footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background-color: #ff6fa5;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(255, 111, 165, 0.35);
+}
+
+.header h2, .footer h3 {
+    color: #ffffff;
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0 15px;
+}
+
+a {
+    display: inline-block;
+    padding: 6px 16px;
+    color: #e0457b;
+    background-color: #ffffff;
+    border: 2px solid #ff9ec4;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+a:hover,
+a.aktif {
+    color: #ffffff;
+    background-color: #ff6fa5;
+    border-color: #ffffff;
+    box-shadow: 0 3px 8px rgba(255, 111, 165, 0.5);
+}
+
+a:active {
+    transform: scale(0.95);
+}
+
+.card {
+    max-width: 900px;
+    margin: 10px auto 20px;
+    padding: 30px 35px;
+    background-color: #ffffff;
+    border: 2px solid #ffc2d9;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(255, 111, 165, 0.25);
+}
+
+.card img,
+.card video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 3px solid #ffd6e6;
+    box-shadow: 0 4px 12px rgba(255, 111, 165, 0.2);
+}
+
+.card audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.biodata {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.teks-video {
+    text-align: justify;
+    line-height: 1.7;
+}

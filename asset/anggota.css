@@ -1,0 +1,230 @@
+    .welcome-box {
+  background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
+  border-left: 5px solid var(--gradient-primary-start);
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-weight: 600;
+  color: var(--bg-sidebar);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+    :root {
+      --bg-sidebar: #0B1437;
+      --bg-sidebar-hover: #1B2559;
+      --gradient-primary-start: #3B5BFC;
+      --gradient-primary-end: #6C3CE9;
+      --accent-orange: #FF7A30;
+      --bg-content: #F6F8FD;
+      --text-dark: #1A1D29;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-content);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6, .brand-text {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .app-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 260px;
+      background: var(--bg-sidebar);
+      color: #fff;
+      transition: all 0.3s ease;
+      z-index: 1030;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar .brand {
+      padding: 24px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .sidebar .nav-link {
+      color: #a3b1cc;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      transition: all 0.2s;
+      border-radius: 0;
+    }
+
+    .sidebar .nav-link:hover {
+      color: #fff;
+      background-color: var(--bg-sidebar-hover);
+    }
+
+    .sidebar .nav-link.active {
+      color: #fff;
+      background: linear-gradient(135deg, var(--gradient-primary-start), var(--gradient-primary-end));
+      box-shadow: 0 4px 12px rgba(59, 91, 252, 0.3);
+    }
+
+    .sidebar .dropdown-menu {
+      background: #111c44;
+      border: none;
+      padding: 0;
+      margin: 0;
+      border-radius: 0;
+    }
+
+    .sidebar .dropdown-item {
+      color: #a3b1cc;
+      padding: 10px 24px 10px 48px;
+      font-size: 14px;
+    }
+
+    .sidebar .dropdown-item:hover, .sidebar .dropdown-item.active {
+      background: var(--bg-sidebar-hover);
+      color: #fff;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .surface-card {
+      background: #ffffff;
+      border-radius: 16px;
+      border: none;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      padding: 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .surface-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.04);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 3px solid #f1f5f9;
+    }
+
+    .info-table td {
+      padding: 6px 0;
+      font-size: 14px;
+    }
+
+    .info-table td:first-child {
+      color: #64748b;
+      font-weight: 500;
+      width: 100px;
+    }
+
+    .info-table td:last-child {
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .sidebar .nav-link{
+        display:flex;
+        align-items:center;
+        gap:14px;
+        padding:12px 20px;
+        font-size:16px;
+        font-weight:500;
+    }
+
+    .sidebar .nav-link i{
+        width:24px;
+        min-width:24px;
+        text-align:center;
+        font-size:18px;
+    }
+
+    .sidebar .nav-link span{
+        flex:1;
+    }
+
+    .sidebar .dropdown-toggle::after{
+        margin-left:auto;
+    }
+
+    .sidebar .dropdown-menu{
+        position: static !important;
+        inset: auto !important;
+        transform: none !important;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding-left: 35px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    /* Style Tambahan untuk Alert Selamat Datang yang Elegan */
+    .welcome-box {
+      background: linear-gradient(135deg, #e0e7ff, #f0fdf4);
+      border-left: 5px solid var(--gradient-primary-start);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-weight: 600;
+      color: var(--bg-sidebar);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  
+    /* === FIX Revisi: kotak sapaan dipindah ke bawah sidebar (di atas Logout) === */
+    .sidebar #welcome-alert { padding: 0 16px; }
+    .sidebar .welcome-box {
+      background: rgba(255,255,255,0.06) !important;
+      border-left: 3px solid var(--gradient-primary-start) !important;
+      border-radius: 10px;
+      padding: 10px 12px !important;
+      margin: 0 0 14px 0 !important;
+      font-size: 12.5px;
+      color: #c3cbe6;
+      gap: 8px !important;
+    }
+    .sidebar .welcome-box i { color: #8fa5ff !important; font-size: 15px !important; }
+    .sidebar .welcome-box .icon-shape {
+      width: 34px; height: 34px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.12) !important; flex-shrink: 0;
+    }
+    .sidebar .welcome-box .icon-shape i { color: #9db4ff !important; font-size: 14px !important; }
+    .sidebar .welcome-box .text-muted { color: #7d8bb0 !important; }
+    .sidebar .welcome-box .text-primary { color: #9db4ff !important; }
+
+    /* === FIX Revisi: brand header dibuat 2 baris & lebih ringkas === */
+    .sidebar .brand {
+      padding: 16px 20px !important;
+      font-size: 15px !important;
+      line-height: 1.35;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .sidebar .brand .brand-line1 { display:block; font-size:17px; font-weight:700; letter-spacing:0.5px; }
+    .sidebar .brand .brand-line2 { display:block; font-size:10.5px; font-weight:500; letter-spacing:1px; opacity:.65; margin-top:2px; }
+
+    /* === FIX Revisi: agar tampilan pas satu halaman (fit to page) === */
+    html, body { height: 100%; }
+    .sidebar { position: sticky; top: 0; align-self: flex-start; height: 100vh; overflow-y: auto; }
+    .main-content { padding: 20px 26px !important; }
+  
+    /* === FIX Revisi 2: Logout & kotak sapaan didorong mentok ke bawah sidebar === */
+    .sidebar .py-3.flex-grow-1 { display: flex; flex-direction: column; }
+    .sidebar .py-3.flex-grow-1 > ul.nav { flex: 1 1 auto; }
+  
